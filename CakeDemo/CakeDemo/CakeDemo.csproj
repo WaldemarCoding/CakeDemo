@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>CakeDemo</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CakeDemo.Core\CakeDemo.Core.csproj" />
+    <ProjectReference Include="..\Modules\CakeDemo.Modules.ModuleName\CakeDemo.Modules.ModuleName.csproj" />
+    <ProjectReference Include="..\Services\CakeDemo.Services.Interfaces\CakeDemo.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\CakeDemo.Services\CakeDemo.Services.csproj" />
+  </ItemGroup>
+</Project>
